@@ -1,3 +1,18 @@
+:root {
+    --text: #cdd6f4;
+    --crust: #11111b;
+    --green: #a6e3a1;
+    --green-hover: #72df68;
+    --red: #f38ba8;
+    --maroon: #eba0ac;
+    --flamingo: #f2cdcd;
+    --peach: #fab387;
+    --surface0: #313244;
+    --surface1: #45475a;
+    --overlay0: #6c7086;
+    --overlay2: #9399b2;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -82,41 +97,54 @@ footer {
     right: 0;
     text-align: center; 
     padding: 10px 0; 
-    background-color: #000000; 
-    color: white; 
+    background-color: var(--crust); 
+    color: var(--text); 
 }
 
 body.dark-mode {
-    background-color: #180f29;
-    color: white;
+    background-color: var(--crust);
+    color: var(--text);
 }
 
 body.dark-mode h1 {
-    color: white;
+    color: var(--text);
 }
 
 body.dark-mode .btn {
-    background-color: #4CAF50;
-    color: white;
+    background-color: var(--maroon);
+    color: var(--crust);
 }
 
 body.dark-mode .btn:hover {
-    background-color: #4CAF50;
+    background-color: var(--flamingo);
 }
 
 body.dark-mode footer {
-    background-color: white; 
-    color: #1e1238; 
+    background-color: var(--crust); 
+    color: var(--text); 
 }
 
 body.dark-mode .tile {
-    background-color: silver;
-    color: #000000;
+    background-color: var(--surface1);
+    color: var(--peach);
+    border: 0px solid var(--peach);
 }
 
 body.dark-mode .tile-value {
-    color: #000;
+    color: var(--peach);
 }
 .tile.dragging {
     opacity: 0.5; 
+}
+
+
+/* lazy tile theme */
+body.dark-mode .tile {
+    background-color: var(--surface1);
+    color: var(--peach);
+    border: 0px solid var(--peach);
+}
+
+body.dark-mode .tile-value {
+    color: var(--peach);
 }
