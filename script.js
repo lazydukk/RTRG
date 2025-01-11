@@ -111,9 +111,9 @@ function toggleDarkMode() {
   const darkModeBtn = document.getElementById("dark-mode-btn");
 
   if (document.body.classList.contains("dark-mode")) {
-    darkModeBtn.textContent = "Switch to Light Mode";
+    darkModeBtn.textContent = "Light Mode";
   } else {
-    darkModeBtn.textContent = "Switch to Dark Mode";
+    darkModeBtn.textContent = "Dark Mode";
   }
 }
 
@@ -128,8 +128,12 @@ function toggleTileLazy() {
   }
 }
 
-document.getElementById("dark-mode-btn").addEventListener("click", toggleDarkMode);
+document
+  .getElementById("dark-mode-btn")
+  .addEventListener("click", toggleDarkMode);
 document.getElementById("th-btn").addEventListener("click", toggleTileLazy);
-document.getElementById("generate-btn").addEventListener("click", displayTileRack);
+document
+  .getElementById("generate-btn")
+  .addEventListener("click", displayTileRack);
 
 displayTileRack();
