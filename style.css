@@ -74,8 +74,8 @@ h1 {
 .btn {
     padding: 10px 20px;
     font-size: 1.5rem;
-    background-color: #4CAF50;
-    color: white;
+    background-color: var(--surface0);
+    color: var(--text);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -83,7 +83,7 @@ h1 {
 }
 
 .btn:hover {
-    background-color: #45a049;
+    background-color: var(--surface1);
 }
 
 .dark-mode-btn {
@@ -125,7 +125,7 @@ body.dark-mode footer {
 }
 
 body.dark-mode .tile {
-    background-color: var(--surface1);
+    background-color: var(--surface0);
     color: var(--peach);
     border: 0px solid var(--peach);
 }
@@ -139,12 +139,12 @@ body.dark-mode .tile-value {
 
 
 /* lazy tile theme */
-body.dark-mode .tile {
-    background-color: var(--surface1);
+body.tile-lazy .tile {
+    background-color: var(--surface0);
     color: var(--peach);
     border: 0px solid var(--peach);
 }
 
-body.dark-mode .tile-value {
+body.tile-lazy .tile-value {
     color: var(--peach);
 }
