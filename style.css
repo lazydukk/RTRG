@@ -42,7 +42,6 @@ nav {
 }
 li {
   list-style: none;
-  font-style: bold;
 }
 
 h1 {
@@ -93,7 +92,7 @@ h1 {
   transition: background-color 0.5s ease;
 }
 
-.nav-btn {
+.nav-item {
   display: flex;
   padding: 2.5px 5px;
   font-size: 13px;
@@ -105,7 +104,7 @@ h1 {
   transition: background-color 0.5s ease;
 }
 
-body.dark-mode .nav-btn {
+body.dark-mode .nav-item {
   color: var(--text);
 }
 
